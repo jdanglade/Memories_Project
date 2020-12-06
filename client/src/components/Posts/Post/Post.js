@@ -21,7 +21,7 @@ const Post = ({ post }) => {
     <Card className={classes.card}>
       <CardMedia
         className={classes.media}
-        image={post.selectedStyle}
+        image={post.selectedFile}
         title={post.title}
       />
       <div className={classes.overlay}>
@@ -49,7 +49,7 @@ const Post = ({ post }) => {
         <Button size="small" color="primary" onClick={() => {}}>
           <ThumbUpAltIcon fontSize="small" />
           Like
-          {post.likeCount}
+          {` ${post.likeCount}`}
         </Button>
         <Button size="small" color="primary" onClick={() => {}}>
           <DeleteIcon fontSize="small" />
